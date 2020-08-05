@@ -26,3 +26,7 @@ def find_subimage(large_image_path, sub_img_path, threshold=0.99, debug=False):
         cv.waitKey(0)
         cv.destroyAllWindows()
     return (loc[1][0], loc[0][0])
+
+
+res = find_subimage(large_image_path="simpson.jpg", sub_img_path="milhouse.jpg", debug=True)
+print(res)
